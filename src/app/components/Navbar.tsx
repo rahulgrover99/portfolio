@@ -21,8 +21,8 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-100 bg-opacity-90">
-      <div className="flex flex-wrap items-center justify-between mx-auto p-8 bg-gray-900">
+    <nav className="fixed top-0 left-0 right-0 z-10 bg-opacity-80 backdrop-blur">
+      <div className="flex flex-wrap items-center justify-between mx-auto p-8">
         <Link
           href="/"
           className="text-2xl md:text-5xl text-white font-semibold"
@@ -32,7 +32,7 @@ const Navbar = () => {
             alt="Logo"
             width={100}
             height={100}
-            className="h-10 w-10 md:h-16 md:w-16"
+            className="h-5 w-5 md:h-5 md:w-5"
           />
         </Link>
         <div className="block md:hidden">

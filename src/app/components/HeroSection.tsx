@@ -2,17 +2,10 @@
 import React from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
-import { Poppins } from "next/font/google";
-
-// Import Poppins font
-const poppins = Poppins({
-  subsets: ["latin"],
-  weight: ["400", "700"], // Adjust weights as needed
-});
 
 const HeroSection = () => {
   return (
-    <section className={`grid grid-cols-1 lg:grid-cols-12 my-4 ${poppins.className}`}>
+    <section className="grid grid-cols-1 lg:grid-cols-12 my-4">
       <div className="col-span-7 place-self-center place-items-center grid lg:place-items-start">
         <h1 className="text-white max-w-2xl mb-4 lg:text-6xl text-4xl font-extrabold">
           <span className="text-transparent text-6xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
@@ -35,21 +28,23 @@ const HeroSection = () => {
             repeat={Infinity}
           />
         </h1>
-        <p className="text-[#ADB7BE] mb-6 mt-6 textl-lg lg:text-xl">
-            Hey there! 😄 I am Rahul Grover, a Software Engineer who&apos;s 
-            not just coding at Google, but also occasionally debugging life. 
-        </p>
-        <p className="text-[#ADB7BE] mb-6 textl-lg lg:text-xl">    
-            This little corner of the internet is where I share my 
-            adventures, code, and the occasional random thought—so you can get 
-            to know me without the awkward small talk. Hope you enjoy scrolling 
-            through my portfolio as much as I enjoyed creating it! 
-        </p>
-        <p className="text-[#ADB7BE] mb-12 textl-lg lg:text-xl">    
-            If you&apos;ve got questions, feedback, or just want to debate whether 
-            tabs are better than spaces, hit me up. Let&apos;s connect, chat, and 
-            maybe even solve a bug or two together.
-        </p>
+        <div className="text-[#ADB7BE] mb-6 mt-6 textl-lg lg:text-xl">
+          <p>
+              Hey there! 😄 I am Rahul Grover, a Software Engineer who&apos;s 
+              not just coding at Google, but also occasionally debugging life. 
+          </p>
+          <p>    
+              This little corner of the internet is where I share my 
+              adventures, code, and the occasional random thought—so you can get 
+              to know me without the awkward small talk. Hope you enjoy scrolling 
+              through my portfolio as much as I enjoyed creating it! 
+          </p>
+          <p>    
+              If you&apos;ve got questions, feedback, or just want to debate whether 
+              tabs are better than spaces, hit me up. Let&apos;s connect, chat, and 
+              maybe even solve a bug or two together.
+          </p>
+        </div>
         <div>
           <button className="bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white px-6 py-3 rounded-full mr-4">
             Hire Me

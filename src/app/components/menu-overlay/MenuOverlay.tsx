@@ -48,7 +48,7 @@ const MenuOverlay = ({ isVisible, links }: MenuOverlayProps) => {
   return (
     <div
       ref={menuRef}
-      className={`bg-gray-900 z-10 ${isVisible ? "menu-overlay--visible" : "menu-overlay--hide"}`}
+      className={`bg-opacity-80 backdrop-blur z-10 md:hidden ${isVisible ? "menu-overlay--visible" : "menu-overlay--hide"}`}
     >
       <ul className="flex flex-col py-4 items-center">
         {links.map((link, index) => (
